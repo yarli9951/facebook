@@ -13,7 +13,7 @@ pipeline {
                                 steps
                                 {
 
-                checkout([$class: 'GitSCM', branches: [[name: '*/facebook-2.0']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/yarli9951/facebook.git']]])
+                                     checkout([$class: 'GitSCM', branches: [[name: '*/facebook-2.0']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/yarli9951/facebook.git']]])
                                   }
 
                      stage('Build'){
