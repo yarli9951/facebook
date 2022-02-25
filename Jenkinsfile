@@ -8,7 +8,8 @@ pipeline {
               defaultValue: 'facebook-2.0',
               description: 'Facebook project')
            }
-     stages {
+
+     stages{
                      stage('Checkout'){
                                 steps
                                 {
