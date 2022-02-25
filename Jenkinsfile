@@ -19,7 +19,7 @@ pipeline {
                      stage('Build'){
                        steps{
                          script{
-                           mvn -f /var/lib/jenkins/workspace/Maven-Pipeline/pom.xml install
+                           sh 'mvn -f /var/lib/jenkins/workspace/Maven-Pipeline/pom.xml install'
                          }
                        }
                      }
