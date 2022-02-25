@@ -22,7 +22,7 @@ pipeline {
                      stage('Build'){
                        steps{
                          script{
-                           sh 'sudo /etc/maven/apache-maven-3.8.4/bin/mvn -f /var/lib/jenkins/workspace/Maven-Pipeline/pom.xml install'
+                           sh ' /etc/maven/apache-maven-3.8.4/bin/mvn -f /var/lib/jenkins/workspace/Maven-Pipeline/pom.xml install'
                          }
                        }
                      }
