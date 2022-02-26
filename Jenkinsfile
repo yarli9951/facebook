@@ -1,4 +1,4 @@
-
+//This is jenkins pipeline for C
 pipeline {
 
   agent any
@@ -22,7 +22,7 @@ pipeline {
                      stage('Build'){
                        steps{
                          script{
-                           sh ' /etc/maven/apache-maven-3.8.4/bin/mvn -f /var/lib/jenkins/workspace/Maven/pom.xml install'
+                           sh ' /etc/maven/apache-maven-3.8.4/bin/mvn -f /var/lib/jenkins/workspace/Maven-jenkins/pom.xml install'
                          }
                        }
                      }
